@@ -1,0 +1,157 @@
+
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.contenedorOpciones{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorOpciones a{
+    margin: 40px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #c2ac4b;
+}
+
+.logosRedes{
+    display: flex;
+    padding: 20px;
+}
+
+.logosRedes a{
+    text-decoration: none;
+    margin: 20px;
+}
+
+.logosRedes img{
+    height: 30px;
+}
+
+/* Iniciamos con el slider */
+
+.presentacion{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url('/Imagenes/TULUGAR.png');
+    background-size: 100% 100%;
+    background-position: center;
+}
+/* .presentacion img{
+    width: 100%;
+    max-width: 100%;
+    height: 500px;
+    opacity: .88;
+    background-size: cover;
+} */
+
+/* .presentacion h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 75px;
+    line-height: 130%;
+    word-spacing: 20px;
+    text-shadow: 2px 2px 5px #c2ac4b;
+    color:#000;
+} */
+
+/* Seccion acerca de las cabañas*/
+
+.acercaDe h1{
+    text-align: center;
+    margin: 20px;
+    font-size: 60px;
+}
+
+.acercaDe p{
+    margin: 20px;
+    text-align: center;
+    font-size: 21px;
+}
+
+/* Seccion de disponibilidad*/
+
+.disponibilidad{
+    background-color: #c2ac4b;
+    width: 98%;;
+    height: 400px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px;
+}
+
+.consulta{
+    grid-column: 1/3;
+}
+.consulta textarea{
+    width: 600px;
+    height: 100px;
+}
+.consulta button{
+    width: 120px;
+}
+
+
+/* Seccion que nos muestra y lleva a las cabañas*/
+
+.cabañas{
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.cabañaGrande {
+    margin: 30px;
+    width: 450px;
+    height: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.cabañaGrande .container{
+    padding: 20px;
+}
+
+.cabañaPequeña{
+    margin: 30px;
+    width: 450px;
+    height: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+.cabañaGrande .container{
+    padding: 20px;
+}
+
+/* diferentes tamaños*/
+
+@media screen and (max-width: 750px) {
+    .presentacion{
+        position: relative;
+        width: 100%;
+        height: 400px;
+        background-image: url('/Imagenes/TULUGAR695.png');
+        background-size: 100% 100%;
+        background-position: center;
+    }
+}
+
+@media screen and (max-width: 1250px) and (min-width:750px) {
+    .presentacion{
+        position: relative;
+        width: 100%;
+        height: 400px;
+        background-image: url('/Imagenes/TULUGAR1250.png');
+        background-size: 100% 100%;
+        background-position: center;
+    }
+}
