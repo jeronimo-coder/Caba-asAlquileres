@@ -131,7 +131,7 @@
 .cabañaGrande .container{
     padding: 20px;
 }
-
+  
 /* diferentes tamaños*/
 
 @media screen and (max-width: 750px) {
